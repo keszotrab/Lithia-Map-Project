@@ -2,17 +2,20 @@
   class="viewport"
   (mousedown)="startDrag($event)"
   (wheel)="onWheel($event)"
+  
 >
   <div
     class="world"
     [style.transform]="worldTransform"
   >
+  @for (tile of visibleTiles; track tile.src){
     <img
-      *ngFor="let tile of visibleTiles"
       class="tile"
       [src]="tile.src"
       [style.left.px]="tile.x"
       [style.top.px]="tile.y"
     />
+  }
+    
   </div>
 </div>

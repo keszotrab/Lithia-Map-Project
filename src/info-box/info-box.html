@@ -1,0 +1,11 @@
+<div class="info-box" [class.expanded]="isExpanded">
+  <button class="scroll-handle" (click)="toggleScroll()">
+    {{ isExpanded ? 'Zwiń' : 'Rozwiń' }}
+  </button>
+
+  <div class="scroll-content">
+    <p>Treść scrolla...</p>
+    <p>Więcej tekstu...</p>
+  </div>
+</div>
+

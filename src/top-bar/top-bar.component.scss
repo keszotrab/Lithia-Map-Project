@@ -1,0 +1,25 @@
+.top-bar{
+    position:fixed;
+    height: 40px;
+    width: 800px;
+    border-color: red;
+    border-style: dashed;
+    background-color: blue;
+    top: 0;
+    z-index: 50;
+    
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 80px;
+     
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+
+}
+
+.logo-box{
+
+}
+
+.top-bar-button{}
